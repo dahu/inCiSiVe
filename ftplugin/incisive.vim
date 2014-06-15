@@ -77,9 +77,10 @@ function! DEMaps()
   nnoremap <buffer> <right> W
 endfunction
 
+call DEMaps()
+
 augroup DataEntry
   au!
-  au InsertCharPre       *.csv call AddHalf()
-  au InsertLeave         *.csv call CleanupLine()
-  au BufNewFile,BufRead  *.csv call DEMaps()
+  au InsertCharPre <buffer> call AddHalf()
+  au InsertLeave   <buffer> call CleanupLine()
 augroup END

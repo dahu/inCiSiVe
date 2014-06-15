@@ -1,0 +1,11 @@
+inCiSiVe
+--------
+
+__A zippy way to enter CSV data in Vim__
+
+I don't expect this to be useful to many, if any.
+
+It _is_ useful to me for entering student marks.
+
+* ++<space>++ automatically creates a new comma-separated cell.
+* Double-tapping numbers (like 88) adds 0.5 to the number (ie 8.5)
